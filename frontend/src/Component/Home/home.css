@@ -1,0 +1,510 @@
+.Home{
+width: 100%;
+height: 100%;
+}
+.heading{
+    margin-left: 50px;
+    font-size: 50px;
+
+}
+.services{
+font-size: 30px;
+margin: 17px 15px;
+}
+.webBody{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+/* .Description{
+    display: flex;
+    width: 700px;
+    height: 450px;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-left: 50px;
+    box-shadow: 1px;
+} */
+.primaryImg{
+    display: flex;
+    width: 50%;
+    height: 450px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    flex-wrap: wrap;  /* Allows images to wrap to the next line */
+
+    border-radius: 12px;
+    margin-left: 50px;
+    box-shadow: 1px; 
+    gap: 10px;
+
+}
+.primaryImg >img{
+    width: 400px;
+    border-radius: 12px;
+}
+/*  */
+
+.Description{
+    width: 40%;
+    /* margin: auto; */
+    margin-left: 50px;
+
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.Ratings{
+    width: 45%;
+    margin: 70px 70px;
+    display: flex;
+    gap: 170px;
+}
+.totalRating>p{
+    margin: -20px 63px;
+    font-size: 20px;
+    color: gray;
+}
+.ratingDetails{
+    display: flex;
+}
+.ratingDetails >p{
+    margin: 10px 10px;
+    font-size: 25px;
+    font-family: Roboto,Bold;
+}
+.totalCustomer >p{
+    margin: -20px 63px;
+    font-size: 20px;
+    color: gray;
+}  
+
+/* scrollable images */
+.carousel-container {
+    display: flex;
+    align-items: center;
+     gap: 10px; 
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+  }
+  
+   .carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    width: 100vw; 
+    max-width: 1900px; 
+    white-space: nowrap;
+     /* margin-left: 1250px;  */
+  }
+
+  /* ✅ Modified: Hide scrollbar */
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+   
+  .card {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    display: inline-flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-content {
+    color: white;
+    /* max-width: 60%; */
+  }
+  
+  
+  
+  .card-img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  
+  /* ✅ Modified: Fixed button position */
+  /* .carousel-btn {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  } */
+   .popUpImg{
+    width: 80%;
+    margin-top: -20px;
+   }
+   .popUpImg >img{
+    /* width: 100%; */
+    display:inline-flex;
+    /* flex-direction: row; */
+    width: 100px;
+    /* display: inline-flex; */
+    gap: 10px;
+    padding: 30px;
+   }
+   .popImageTitle{
+    display: inline-flex;
+    gap: 50px;
+    font-size: 26px;
+    margin:-50px 20px;
+   }
+  .newService{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0; 
+
+  }
+  .newContainer{
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* padding: 10px; */
+    width: 100vw; /* ✅ Modified: Set width to 80% of the screen */
+    max-width: 1900px; /* ✅ Modified: Limit max width */
+    /* white-space: nowrap; */
+
+  }
+  .containerCard{
+    display: flex;
+    flex-direction: column;
+    width: 150px;  
+    height: 200px;
+    gap: 10px;
+  }
+  .newCard{
+    width: 250px;  
+    height: 200px;
+    gap: 10px;
+    margin-left: 15px;
+    border-radius: 15px;
+    display:inline-flex; /* ✅ Modified: Ensures horizontal alignment */
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ 
+  }
+  .newserviceTitle{
+    margin-top: 20px;
+    margin-left: 10px;
+    max-width: 200px;
+  }
+  .mostBooked{
+    width: 100%;
+    /* height: auto; */
+  }
+  .newServeContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+    /* padding: 50px 0; */
+  }
+.newServe{
+    width: 90%;
+    display: flex;
+    gap: 55px;
+    margin-left: 50px;
+}
+.containerCard{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height: 450px;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.containerCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+/* .newCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+} */
+  .newCard-img{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+
+  }
+  .mostBooked-ratings{
+    margin-left: -85px;
+    /* margin-top:-7px; */
+
+  }
+  .newserviceTitle{
+    font-size: 20px;
+    width: 300px;
+
+
+  }
+  .TotalRatings{
+    display: flex;
+    margin-top: -20px;
+    font-size: 20px;
+  }
+  .mostBookedPrice{
+    margin-top: -2px;
+    font-size: 20px;
+
+  }
+  .smartLockBanner{
+    width: 93%;
+    margin: 20px 10px 0px 50px;
+    /* margin(top,right,bottom,left) */
+    border-radius: 12px;
+
+  }
+.smartLockBannerImg{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.smartLockBannerImg:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* ///// */
+  
+
+/* ✅ Main Container */
+.forWomen {
+    /* text-align: center; */
+    padding: 20px;
+  }
+  
+  .forWomen h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* ✅ Grid Layout for the Women Salon Boxes */
+  .womenSaloonContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    /* gap: 10px; */
+    /* justify-content: center; */
+    padding: 10px;
+    /* margin-left: 20px; */
+    max-width: 1900px;
+  }
+  
+  /* ✅ Individual Service Box */
+  .womenSaloonBox {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .womenSaloonBox:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ✅ Service Title */
+  .serviceTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* ✅ Image Section */
+  .imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* ✅ Image Styling */
+  .womenSaloon {
+    width: 100%;
+    height: 250px; /* Adjust based on design */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .spaForWomenContainer{
+    display:inline-flex;
+    width: 100%;
+  }
+  .spaWomenBox{
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    padding: 15px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+
+  }
+  .spaWomenBox:hover {
+    transform: scale(1.02);
+  }
+  .spaWomenBox>p{
+    font-size: 20px;
+    font-weight:bold ;
+  }
+  .SpaImg{
+    width: 300px;
+    height: 200px;
+  }
+  .cleaningContainer{
+    display: inline-flex;
+    width: 100%;
+
+  }
+  .cleaningBox{
+    /* display: flex; */
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    padding: 15px;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+
+  }
+  .cleaningBox>p{
+    font-size: 20px;
+    font-weight:bold ;
+  }
+  .cleaningBox:hover {
+    transform: scale(1.02);
+  }
+  .cleanImgBox{
+    width: 100%;
+  }
+  .cleanImg{
+    width: 400px;
+    height: 300px;
+    border-radius: 12px;
+    gap: 20px;
+
+  }
+  .aquaGardImg{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover; /* Ensures clear scaling */
+    filter: contrast(110%) brightness(105%);
+    image-rendering: crisp-edges; /* For modern browsers */
+    /* image-rendering: pixelated;  */
+
+  }
+  .bathroomCleanBanner{
+    width: 100%;
+    height: 40%;
+    margin-left: 50px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in;
+
+  }
+  .bathroomCleanBanner:hover{
+    transform: scale(1.03);
+  }
+  .bathroomCleanImg{
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .womenSaloonContainer {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .womenSaloon {
+      height: 180px;
+    }
+  }
+  

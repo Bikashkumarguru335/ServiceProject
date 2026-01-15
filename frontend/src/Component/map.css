@@ -1,0 +1,154 @@
+.smartLock{
+    width: 100%;
+}
+.product-container {
+    display: flex;
+    flex-direction:row;
+    width: 50%;
+    /* margin: auto; */
+    padding: 20px;
+  }
+  .productPart{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 300px;
+    gap: 100px;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    max-height: 100vh; /* Limit height */
+
+    scroll-behavior: smooth;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-rating {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #222;
+    margin: 10px 0;
+  }
+  
+  .product-features {
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .product-features li {
+    margin-bottom: 5px;
+  }
+  
+  .add-btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-btn:hover {
+    background-color: #5752d5;
+  }
+  
+  /* Scrollbar styling */
+  .product-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .product-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .hero {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 24px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .hero-btn {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .service-rights{
+    position: sticky;
+  }

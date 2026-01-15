@@ -1,0 +1,61 @@
+.sidebar-col {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    height: 35%;
+    overflow-y: auto; /* Internal scroll */
+    min-width: 280px;/* Forces sidebar to stay visible */
+    max-height: 50%;
+}
+
+.sidebar-col h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.cat-img-box{
+       width: 75px;
+    height: 75px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    overflow: hidden; /* clips the image to the border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ 
+}
+.cat-img{   
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ensures real photos fill the square perfectly */
+    transition: transform 0.2s;
+}
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of icons */
+    gap: 15px;
+}
+.hero-banner {
+    background: linear-gradient(90deg, #1c1c1c 0%, #2a2a2a 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 24px;
+    min-height: 180px;
+    flex-shrink: 0;
+     
+    
+}
+.banner-text {padding: 30px; z-index: 2; width: 70%; }
+.banner-text h1 { font-size: 30px; margin: 10px 0; }
+.banner-img {
+    height: 180px; width: 250px; object-fit: cover; mask-image: linear-gradient(to left, black 70%, transparent 100%); 
+     -webkit-mask-image: linear-gradient(to left, black 70%, transparent 100%) }
+
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.pack-tag { font-size: 10px; font-weight: bold; color: #00796a; background: #e0f2f1; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
+

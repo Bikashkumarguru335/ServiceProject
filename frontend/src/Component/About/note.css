@@ -1,0 +1,203 @@
+/* --- Global Reset for this page --- */
+/* * {
+    box-sizing: border-box;
+} */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden; /* prevents double scrollbars 
+} */
+
+/* Main Container: Holds Navbar + Content */
+.main-layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Forces full screen height */
+}
+
+/* --- THE 3-COLUMN GRID --- */
+.content-area {
+    display: grid;
+    /* Fixed Left (280px) | Flexible Middle | Fixed Right (350px) */
+    grid-template-columns: 280px 1fr 350px;
+    gap: 24px;
+    padding: 20px 40px;
+    flex: 1; /* Takes all remaining height below Navbar */
+    overflow: hidden; /* Prevents whole page scroll */
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- 1. LEFT SIDEBAR --- */
+.sidebar-col {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+    overflow-y: auto; /* Internal scroll */
+    min-width: 280px; /* Forces sidebar to stay visible */
+}
+
+.sidebar-col h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of icons */
+    gap: 15px;
+}
+
+.cat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cat-img-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    background: #eee;
+}
+
+.cat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-item span {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.2;
+}
+
+.cat-item:hover span {
+    color: #6e42e5;
+    font-weight: bold;
+}
+
+/* --- 2. MIDDLE CONTENT (SCROLLABLE) --- */
+.middle-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto; /* THIS MAKES IT SCROLL */
+    padding-right: 10px; /* Space for scrollbar */
+    padding-bottom: 40px;
+}
+
+/* Hide Scrollbar for cleaner look (optional) */
+.middle-col::-webkit-scrollbar { width: 6px; }
+.middle-col::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 4px; }
+
+.middle-col h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Banner */
+.hero-banner {
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.banner-content { z-index: 2; width: 60%; }
+.banner-content h1 { font-size: 40px; margin: 10px 0; color: #fff; }
+.banner-bg-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    opacity: 0.8;
+    mask-image: linear-gradient(to left, black, transparent);
+    -webkit-mask-image: linear-gradient(to left, black, transparent);
+}
+
+/* Service Card */
+.service-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.pack-tag { font-size: 10px; font-weight: bold; color: #00796a; background: #e0f2f1; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
+
+.service-card h4 { margin: 10px 0 5px 0; font-size: 18px; }
+
+.rating-row { display: flex; align-items: center; font-size: 13px; color: #666; margin-bottom: 10px; }
+.star-badge { background: #6e42e5; color: white; padding: 2px 5px; border-radius: 4px; font-size: 11px; font-weight: bold; margin-right: 6px; }
+
+.price-box { margin-bottom: 15px; font-size: 15px; }
+.price-box strong { font-size: 16px; margin-right: 8px; }
+.price-box del { color: #999; margin-right: 8px; font-size: 14px; }
+
+.add-button {
+    background: white;
+    color: #6e42e5;
+    border: 1px solid #e0e0e0;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-divider { height: 1px; background: #eee; border: none; margin: 15px 0; }
+.details-ul { list-style: none; padding: 0; margin: 0; font-size: 13px; color: #555; line-height: 1.6; }
+.details-ul li { margin-bottom: 5px; }
+
+.edit-pkg-btn { width: 100%; padding: 10px; background: white; border: 1px solid #ddd; border-radius: 6px; margin-top: 15px; cursor: pointer; color: #333; font-weight: 500;}
+
+/* --- 3. RIGHT SIDEBAR --- */
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 320px;
+}
+
+.widget-box {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.empty-cart { text-align: center; padding: 40px 20px; }
+.cart-icon-wrap { position: relative; display: inline-block; margin-bottom: 10px; }
+.badge-count { position: absolute; top: -5px; right: -5px; background: #6e42e5; color: white; font-size: 10px; padding: 2px 6px; border-radius: 10px; }
+
+.offer-row { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+.offer-icon { background: #e0f2f1; padding: 8px; border-radius: 50%; color: #00796a; display: flex; align-items: center;}
+
+.promise-row { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center; }
+.promise-list li { display: flex; align-items: center; gap: 8px; font-size: 13px; margin-bottom: 8px; color: #333; }

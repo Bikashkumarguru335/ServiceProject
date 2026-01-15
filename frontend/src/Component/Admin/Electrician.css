@@ -1,0 +1,10 @@
+
+.image-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  

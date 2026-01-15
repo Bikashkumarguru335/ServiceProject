@@ -1,0 +1,66 @@
+.bookings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .bookings-header {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    margin-left: 400px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .help-button {
+    background: #f3f3f3;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bookings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -430px;
+  }
+  
+  .bookings-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .bookings-content p {
+    font-size: 14px; 
+    margin-top: -10px;
+    color: #666;
+  }
+  
+  .explore-button {
+    background-color: #6b46c1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,78 @@
+/* --- Modal Layout --- */
+.uc-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 999;
+}
+.uc-modal {
+    background: white; width: 400px; height: 600px; border-radius: 12px;
+    display: flex; flex-direction: column; position: relative; overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* --- Close Button --- */
+.close-icon-btn { 
+    position: absolute; top: 10px; right: 15px; 
+    border: none; background: none; 
+    font-size: 28px; color: #333; cursor: pointer; z-index: 1000; 
+}
+
+/* --- Search View --- */
+.search-header { padding: 15px; border-bottom: 1px solid #eee; margin-top: 30px; }
+.input-wrapper {
+    display: flex; align-items: center; gap: 10px; border: 1px solid #ddd;
+    border-radius: 8px; padding: 10px; background: #fff;
+}
+.input-wrapper input { border: none; outline: none; width: 100%; font-size: 16px; }
+
+/* Dropdown */
+.search-results-list { max-height: 200px; overflow-y: auto; border-bottom: 1px solid #eee; }
+.search-result-item {
+    display: flex; gap: 10px; padding: 12px 15px; cursor: pointer;
+    border-bottom: 1px solid #f5f5f5; align-items: center;
+}
+.search-result-item:hover { background-color: #f9f9f9; }
+.search-result-item p { margin: 0; font-size: 14px; color: #333; }
+
+/* Use Current Location Button */
+.current-loc-btn {
+    width: 100%; margin-top: 10px; padding: 12px; border: none; background: transparent;
+    color: #e91e63; text-align: left; cursor: pointer; font-size: 15px; display: flex; align-items: center; gap: 8px; font-weight: 500;
+}
+.current-loc-btn:disabled { color: #aaa; cursor: wait; }
+
+/* --- Map View --- */
+.map-view-container { display: flex; flex-direction: column; height: 100%; position: relative; }
+.center-pin {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -100%);
+    z-index: 500; pointer-events: none;
+}
+.pin-image { width: 40px; height: 40px; }
+
+/* --- Footer & Simple Button --- */
+.map-footer {
+    background: white; padding: 20px; 
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1); position: relative; z-index: 500;
+}
+.map-address-box { margin-bottom: 15px; }
+.map-address-box h3 { margin: 0 0 5px; font-size: 16px; color: #222; }
+.address-text { margin: 0; font-size: 14px; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Simple Confirm Button */
+.confirm-btn {
+    width: 100%; 
+    padding: 12px; 
+    background-color: #e91e63; /* Pink/Red color */
+    color: white; 
+    border: none;
+    border-radius: 6px; 
+    font-size: 16px; 
+    font-weight: 500; 
+    cursor: pointer;
+}
+.confirm-btn:hover { background-color: #d81b60; }
+.confirm-btn:disabled { background-color: #fab1c7; cursor: not-allowed; }
+
+.change-search-btn {
+    text-align: center; margin-top: 15px; font-size: 13px; color: #666; 
+    cursor: pointer; text-decoration: underline;
+}
