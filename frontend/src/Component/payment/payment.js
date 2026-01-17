@@ -24,7 +24,7 @@ const Payment = () => {
 
         try {
             // 1. Call Backend to Create Order
-            const { data } = await axios.post('http://localhost:5000/paymentApi/create-order', {
+            const { data } = await axios.post('https://serviceproject-1-me4e.onrender.com/paymentApi/create-order', {
                 amount,
                 paymentMethod
             });
