@@ -61,7 +61,7 @@ const Navbar = () => {
             return alert("Please enter valid number");
         try {
             // Replace with your actual backend URL
-            await axios.post('http://localhost:5000/userApi/send-otp', { phone });
+            await axios.post('https://serviceproject-1-me4e.onrender.com/userApi/send-otp', { phone });
             setShowOtpInput(true); // Switch to OTP view
         } catch (error) {
             console.error(error.message);
@@ -73,7 +73,7 @@ const Navbar = () => {
     const handleVerifyOtp = async () => {
         const enteredOtp = otp.join("");
         try {
-            const res = await axios.post('http://localhost:5000/userApi/otpVerify', { phone, otp: enteredOtp });
+            const res = await axios.post('https://serviceproject-1-me4e.onrender.com/userApi/otpVerify', { phone, otp: enteredOtp });
             console.log(res);
             // Save to local storage
             localStorage.setItem('token', res.data.token);
@@ -111,7 +111,7 @@ const Navbar = () => {
     const handleManualSearch = async () => {
         if (!searchQuery.trim()) return;
         try {
-            const res = await axios.get(`http://localhost:5000/api/search?q=${searchQuery}`);
+            const res = await axios.get(`https://serviceproject-1-me4e.onrender.com/api/search?q=${searchQuery}`);
             setSearchResults(res.data);
             setShowSearchDropdown(true);
         } catch (error) { console.error(error); }
